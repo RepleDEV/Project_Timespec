@@ -1,0 +1,19 @@
+{
+  "name": "project_timespec",
+  "version": "0.0.1",
+  "description": "We're on the way!",
+  "main": "app.process.js",
+  "scripts": {
+    "start": "node app.process.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RepleDEV/Project_Timespec.git"
+  },
+  "author": "RepleDEV",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
