@@ -1,0 +1,134 @@
+/* All element variables uwu */
+@import "root.css";
+
+*{
+    text-align:center;
+}
+p{
+    font-family:var(--text-default-font);
+}
+
+.home {
+    margin:0;
+}
+
+.navbar {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+.navbar li {
+    float:left;
+}
+.navbar li a {
+    display:block;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-family: var(--text-default-font);
+}
+
+.navbar .navRight{
+    float: right;
+}
+
+.navbar li a:hover{
+    
+}
+
+.title {
+    font-size: 6rem;
+    font-family: var(--title-default-font);
+}
+.subtitle{
+    font-family: var(--subtitle-default-font);
+}
+
+/* Project Goals pagesection */
+
+.projectgoal{
+    margin-top: 10%;
+}
+.projectgoal h1{
+    font-family: var(--text-default-font);
+}
+
+/* Button styling */
+.timelineBtn{
+    margin:4rem;
+
+    border-radius: 5px;
+    border:none;
+
+    height:5rem;
+    width:12rem;
+
+    font-size: 1.2rem;
+    font-family: var(--text-default-font);
+
+    transition: font-size 178ms;
+
+    background-color: var(--button-accent-color);
+    color:var(--text-color-dark);
+
+    box-shadow: -4px 4px 10px black;
+
+    outline:none;
+}
+.timelineBtn:hover{
+    font-size:1.15rem;
+}
+
+.dark, .light {
+    transition-duration: 200ms;
+}
+
+/* Dark Theme Properties */
+.dark {
+    background-color:var(--main-bg-color-dark);
+}
+
+.dark p {
+    color:var(--text-color-dark);
+}
+
+.dark .navbar {
+    box-shadow: 0px 2px 10px;
+    background-color: var(--navbar-bg-color-dark);
+}
+
+.dark .navbar li a {color:var(--text-color-dark)}
+
+.dark .title {
+    margin-top:0px;
+    color:var(--title-color-dark);
+    text-shadow: -6px 6px 6px black;
+}
+.dark .subtitle {
+    color:var(--subtitle-color-dark);
+}
+
+.dark .projectgoal h1{
+    color: var(--text-color-dark);
+}
+
+/* Light Theme Properties */
+.light {
+    background-color:var(--main-bg-color-light);
+}
+.light p {
+    color:var(--text-color-light);
+}
+.light .title {
+    margin-top:0px;
+    color:var(--title-color-light);
+}
+.light .subtitle {
+    color:var(--subtitle-color-light);
+}
+.light .navbar {
+    box-shadow: 0px 2px 10px;
+}
+.light .navbar li a {color:var(--text-color-light)}

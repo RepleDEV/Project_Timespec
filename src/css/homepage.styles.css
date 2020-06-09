@@ -1,29 +1,5 @@
-/* Font Import - fonts.googel.com */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 /* All element variables uwu */
-:root{
-    /* Main Background Colors */
-    --main-bg-color-dark: #1b1b1b;
-    --main-bg-color-light: #FFF;
-
-    /* Secondary Colors */
-    --navbar-bg-color-dark:#292929;
-    /* Accent Colors */
-
-    /* Text, Headers, and Sub-headers' Properties */
-    --text-color-dark: #FFF;
-    --text-color-light:#000;
-
-    --title-color-light: rgb(255, 74, 42);
-    --title-color-dark:rgba(255, 255, 255);
-
-    --text-opacity-dark: 87%;
-    --text-opacity-light: 100%;
-
-    --text-default-font: 'Poppins', sans-serif;
-    --title-default-font:'Poppins',sans-serif;
-}
+@import "root.css";
 
 *{
     text-align:center;
@@ -64,6 +40,56 @@ p{
 
 .title {
     font-size: 6rem;
+    font-family: var(--title-default-font);
+}
+.subtitle{
+    font-family: var(--subtitle-default-font);
+}
+
+/* Project Goals pagesection */
+
+.projectgoal{
+    margin-top: 10%;
+}
+.projectgoal h1{
+    font-family: var(--text-default-font);
+}
+
+/* Button styling */
+.timelineBtn{
+    margin:4rem;
+
+    cursor:pointer;
+
+    border-radius: 5px;
+    border:none;
+
+    height:5rem;
+    width:12rem;
+
+    font-size: 1.2rem;
+    font-family: var(--text-default-font);
+
+    transition: font-size 178ms;
+
+    background-color: var(--button-accent-color);
+    color:var(--text-color-dark);
+
+    box-shadow: -4px 4px 10px black;
+
+    outline:none;
+}
+.timelineBtn:hover{
+    font-size:1.15rem;
+}
+.timelineBtn:active{
+    transition:background-color 150ms;
+    color:black;
+    background-color:white;
+}
+
+.dark, .light {
+    transition-duration: 200ms;
 }
 
 /* Dark Theme Properties */
@@ -85,7 +111,14 @@ p{
 .dark .title {
     margin-top:0px;
     color:var(--title-color-dark);
-    font-family: var(--title-default-font);
+    text-shadow: -6px 6px 6px black;
+}
+.dark .subtitle {
+    color:var(--subtitle-color-dark);
+}
+
+.dark .projectgoal h1{
+    color: var(--text-color-dark);
 }
 
 /* Light Theme Properties */
@@ -98,7 +131,9 @@ p{
 .light .title {
     margin-top:0px;
     color:var(--title-color-light);
-    font-family: var(--title-default-font);
+}
+.light .subtitle {
+    color:var(--subtitle-color-light);
 }
 .light .navbar {
     box-shadow: 0px 2px 10px;

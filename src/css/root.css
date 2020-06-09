@@ -1,0 +1,31 @@
+/* Font Import - fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    /* Main Background Colors */
+    --main-bg-color-dark: #1b1b1b;
+    --main-bg-color-light: #FFF;
+
+    /* Secondary Colors */
+    --navbar-bg-color-dark:#292929;
+    /* Accent Colors */
+    --button-accent-color:rgb(255, 74, 42);
+
+
+    /* Text, Headers, and Sub-headers' Properties */
+    --text-color-dark: #FFF;
+    --text-color-light:#000;
+
+    --title-color-light: #000;
+    --title-color-dark:rgba(255, 255, 255);
+
+    --subtitle-color-dark: rgba(255, 255, 255);
+    --subtitle-color-light:#000;
+
+    --text-opacity-dark: 87%;
+    --text-opacity-light: 100%;
+
+    --text-default-font: 'Poppins', sans-serif;
+    --title-default-font:'Poppins',sans-serif;
+    --subtitle-default-font:'Poppins',sans-serif;
+}
