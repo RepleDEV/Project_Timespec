@@ -1,4 +1,4 @@
-/* Font Import - fonts.google.com */
+    /* Font Import - fonts.google.com */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
@@ -10,7 +10,6 @@
     --navbar-bg-color-dark:#292929;
     /* Accent Colors */
     --button-accent-color:rgb(255, 74, 42);
-
 
     /* Text, Headers, and Sub-headers' Properties */
     --text-color-dark: #FFF;
@@ -28,4 +27,15 @@
     --text-default-font: 'Poppins', sans-serif;
     --title-default-font:'Poppins',sans-serif;
     --subtitle-default-font:'Poppins',sans-serif;
+
+    /* Scrollbar Properties */
+    --scrollbar-track-width:6px;
+
+    --scrollbar-thumb-color:rgba(255, 255, 255, 0.25);
+    --scrollbar-thumb-colorhover:rgba(255,255,255,0.8);
+
+    --scrollbar-track-color:#00000000;
+
+    /* Navbar props */
+    --navbar-padding:12px 16px;
 }

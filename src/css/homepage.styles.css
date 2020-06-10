@@ -8,11 +8,24 @@ p{
     font-family:var(--text-default-font);
 }
 
+::-webkit-scrollbar{
+    width:var(--scrollbar-track-width)
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--scrollbar-thumb-color);
+    border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover{background: var(--scrollbar-thumb-colorhover);}
+
 .home {
     margin:0;
 }
 
 .navbar {
+    position:fixed;
+    top:0;
+    width: 100%;
     list-style-type: none;
     margin:0;
     padding:0;
@@ -25,7 +38,7 @@ p{
 .navbar li a {
     display:block;
     text-align:center;
-    padding:14px 16px;
+    padding:var(--navbar-padding);
     text-decoration:none;
     font-family: var(--text-default-font);
 }
@@ -43,16 +56,29 @@ p{
     font-family: var(--title-default-font);
 }
 .subtitle{
+    margin-top:8rem;
     font-family: var(--subtitle-default-font);
 }
 
 /* Project Goals pagesection */
 
 .projectgoal{
-    margin-top: 10%;
+    box-shadow: 0px -3px 8px black;
+    padding: 1rem 2rem;
+    background-color: var(--navbar-bg-color-dark);
+    margin-top: 15%;
 }
 .projectgoal h1{
+    text-align:left;
     font-family: var(--text-default-font);
+}
+.projectgoal p{
+    text-align:left;
+}
+
+/* Footer */
+.footer {
+    
 }
 
 /* Button styling */
